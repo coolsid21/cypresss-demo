@@ -34,7 +34,7 @@ describe('Framework test suite', () => {
         })
 
         
-        cy.get(':nth-child(5) > :nth-child(5) > .btn').click()
+        cy.get('button.btn.btn-success').click()
         cy.get('#country').type('india')
         cy.get('.suggestions > ul > li > a').click() 
         cy.get("#checkbox2").click({force:true})

@@ -1,6 +1,7 @@
 {
-    "defaultCommandTimeout":8000,
-    "env" : {
-        "url" : "https://rahulshettyacademy.com/angularpractice"
-    }
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "url": "https://rahulshettyacademy.com/angularpractice"
+  },
+  "projectId": "3zm2i2"
 }
