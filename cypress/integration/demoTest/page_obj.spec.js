@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import HomePage from "../../pageObjects/HomePage"
-import ProductPage from "../../pageObjects/productPage"
+import HomePage from "../../support/pageObjects/HomePage"
+import ProductPage from "../../support/pageObjects/productPage"
 describe('Page Object test suite', () => {
     before(function(){
         cy.fixture('example').then(function(data){
