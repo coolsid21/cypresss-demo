@@ -6,7 +6,7 @@ describe("Sample commands tesing", ()=> {
         cy.get(':nth-child(4) > [href="#"] > .fa-angle-left').click()
         cy.get('.menu-open > .treeview-menu > :nth-child(1) > .menu-item-link > .menu-item-title').click()
         cy.get('.bg-blue').click()
-        cy.get('#Email').type('test@gmail.com')
+        cy.get('#Email').should('be.enabled').type('test@gmail.com')
         cy.get('#Password').type('test@123')
         cy.get('#FirstName').type('firstname')
         cy.get('#LastName').type('lastname')
