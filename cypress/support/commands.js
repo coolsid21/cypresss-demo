@@ -36,3 +36,13 @@ Cypress.Commands.add("selectProduct", (productName) => {
     })
 
 })
+
+// Login command
+Cypress.Commands.add('login', (email,password)=> {
+    cy.visit('https://admin-demo.nopcommerce.com/login')
+    cy.get('#Email').clear()
+    cy.get('#Email').type(email)
+    cy.get('#Password').clear()
+    cy.get('#Password').type(password)
+    cy.get('.button-1').click()
+})
